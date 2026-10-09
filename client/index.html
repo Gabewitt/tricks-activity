@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Tricks</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="app">
-      <div class="loading">Setting up the table…</div>
+    <!-- #stage is drawn at a fixed design size and scaled to fit whatever window Discord gives us -->
+    <div id="viewport">
+      <div id="stage">
+        <div id="app"><div class="loading">Setting up the table…</div></div>
+        <div id="fx" aria-live="polite"></div>
+      </div>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
